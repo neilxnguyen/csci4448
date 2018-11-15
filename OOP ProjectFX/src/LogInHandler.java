@@ -21,6 +21,9 @@ public class LogInHandler {
         Button closeButton = new Button("Close");
         TextField textField = new TextField();
         textField.setPromptText("Enter your id, or phone number");
+        User o = null;
+
+
 
 
         idButton.setOnAction(e -> {
@@ -76,8 +79,7 @@ public class LogInHandler {
 
         registerButton.setOnAction(e -> {
             System.out.println("Registering new user...");
-            RegisterHandler.display();
-            window.close();
+            RegisterHandler.display(o);
 
         });
 

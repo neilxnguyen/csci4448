@@ -93,4 +93,14 @@ public class Users {
         return null;
     }
 
+    public static void removeUser(String inputID) {
+        for (User user : users) {
+            if (user.getId().equals(inputID)) {
+                System.out.println("User " + user + " removed");
+                users.remove(user);
+                break;
+            }
+        }
+    }
+
 }
