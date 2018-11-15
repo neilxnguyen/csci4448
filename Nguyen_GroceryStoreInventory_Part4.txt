@@ -1,1 +1,16 @@
 https://youtu.be/OGNpTpbMqMI
+
+Due Nov. 16th 11am
+
+I had to redo my whole project because I wanted to use javafx to handle the operations
+in the interface. I was previously using java and using the console as the controller.
+I like having javafx GUI to handle most of the operations, as I can control what is
+happening by allowing the User buttons and textboxes and such. I learned javafx through
+youtube guides and a lot of google-fu, and I still have a lot to learn. I think using
+javafx gives me a huge advantage, in being able to debug issues and ensure quality in
+the product I am delivering. I hope this demonstration was satisfactory. I will be
+working on it over Thanksgiving holiday.
+
+I still have to implement Customer functionality such as the shopping cart, checking out,
+and others. And I still have to add Admin functions such as the ability to add products,
+delete produce, add to stock, etc.
