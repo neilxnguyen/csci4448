@@ -48,6 +48,7 @@ public class Main extends Application {
         window.setTitle("Main");
 
         button = new Button("Click me to begin");
+        button.setDefaultButton(true);
         button.setOnAction(e -> {
             window.close();
 //            ProductView.display();

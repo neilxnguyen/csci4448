@@ -33,6 +33,7 @@ public class LogInHandler {
                 System.out.println("User found");
                 if(currentUser.getUserType() == 1) {
                     System.out.println("Moving to Admin Console");
+                    // CREATE CLASS TO HANDLE ADMIN LOGIN CREDENTIALS
                     AdminConsole adminConsole = new AdminConsole();
                     adminConsole.login(currentUser);
                     adminConsole.display();
@@ -50,6 +51,8 @@ public class LogInHandler {
                 System.out.println("User not found");
             }
         });
+
+        idButton.setDefaultButton(true);
 
         phoneButton.setOnAction(e -> {
             System.out.println(textField.getText());

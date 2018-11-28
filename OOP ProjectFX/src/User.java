@@ -9,6 +9,16 @@ public class User implements Serializable {
     public int userType; //0 for customer, 1 for admin
     public String firstName;
     public String lastName;
+    public ArrayList<Product> shoppingCart = new ArrayList<>();
+
+
+    public List<Product> getShoppingCart() {
+        return shoppingCart;
+    }
+    public void addShoppingCart(Product product) {
+        //CODE TO ADD ITEM TO SHOPPING CART
+        shoppingCart.add(product);
+    }
 
     public void setId(int id) {
         this.id = id;

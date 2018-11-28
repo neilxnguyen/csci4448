@@ -26,6 +26,7 @@ public class Products {
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(products);
         oos.close();
+        System.out.println("Products saved.");
     }
 
     public static void read() throws ClassNotFoundException, IOException {
@@ -49,6 +50,15 @@ public class Products {
         products.add(milk);
 
 
+    }
+
+    public static Product selectProduct(String id) {
+        for (Product product : products) {
+            if (product.getId().equals(id)){
+                return product;
+            }
+        }
+        return null;
     }
 
 

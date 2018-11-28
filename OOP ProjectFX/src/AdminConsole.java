@@ -45,9 +45,41 @@ public class AdminConsole{
                 System.out.println("Something went horribly wrong, could not save");
             }
         });
+
         Button productListButton = new Button("Products");
         productListButton.setOnAction(e -> {
             ProductView.display();
+        });
+
+        Button addNewProduct = new Button("Add New Product");
+        addNewProduct.setOnAction(e -> {
+            //CODE FOR ADDING NEW PRODUCT
+            ProductNew.display();
+        });
+
+        Button productDetailsButton = new Button("Product Details");
+        productDetailsButton.setOnAction(e -> {
+            ProductDetails.display();
+        });
+
+        Button editProduct = new Button("Edit Product Details");
+        editProduct.setOnAction(e -> {
+            EditProductDetails.display();
+        });
+
+        Button removeProduct = new Button("Remove Product");
+        removeProduct.setOnAction(e -> {
+            ProductRemove.display();
+        });
+
+        Button saveProducts = new Button("Save Products");
+        saveProducts.setOnAction(e -> {
+            try {
+                Products.save();
+            }
+            catch (IOException ex) {
+                System.out.println("Something went horribly wrong, unable to save.");
+            }
         });
 
         Button logOutButton = new Button("Log out");
@@ -57,9 +89,9 @@ public class AdminConsole{
         });
 
         VBox vLayout = new VBox(10);
-        vLayout.getChildren().addAll(label1, registerButton, deleteUserButton, saveUsers, productListButton, logOutButton);
+        vLayout.getChildren().addAll(label1, registerButton, deleteUserButton, saveUsers, addNewProduct, productListButton, productDetailsButton, editProduct, removeProduct, saveProducts, logOutButton);
         vLayout.setAlignment(Pos.CENTER);
-        Scene scene = new Scene(vLayout, 300, 250);
+        Scene scene = new Scene(vLayout);
         window.setScene(scene);
         window.show();
     }
