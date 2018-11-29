@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="341.0">Products</node>
+    <node x="0.0" y="0.0">User</node>
+    <node x="625.0" y="0.0">Product</node>
+    <node x="0.0" y="905.0">DeleteHandler</node>
+    <node x="350.0" y="0.0">Users</node>
+    <node x="208.0" y="690.0">EditProductDetailsSecondary</node>
+    <node x="208.0" y="809.0">EditProductDetails</node>
+    <node x="569.0" y="548.0">AdminConsole</node>
+    <node x="370.0" y="905.0">ProductView</node>
+    <node x="0.0" y="548.0">Momento</node>
+    <node x="584.0" y="809.0">LogInHandler</node>
+    <node x="454.0" y="690.0">ProductDetailsSecondary</node>
+    <node x="0.0" y="690.0">ViewCart</node>
+    <node x="399.0" y="809.0">ProductNew</node>
+    <node x="267.0" y="341.0">CustomerWindow</node>
+    <node x="680.0" y="690.0">RegisterHandler</node>
+    <node x="298.0" y="548.0">CareTaker</node>
+    <node x="185.0" y="905.0">ProductRemove</node>
+    <node x="0.0" y="809.0">AddCart</node>
+    <node x="488.0" y="341.0">Main</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="942.5" y="784.3333333333328" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

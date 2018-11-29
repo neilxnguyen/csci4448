@@ -27,7 +27,6 @@ public class AddCart {
                     System.out.println("Product added");
                     user.addShoppingCart(product);
                     productIDField.clear();
-                    break;
                 }
 
             }

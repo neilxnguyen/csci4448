@@ -12,9 +12,10 @@ public class User implements Serializable {
     public ArrayList<Product> shoppingCart = new ArrayList<>();
 
 
-    public List<Product> getShoppingCart() {
+    public ArrayList<Product> getShoppingCart() {
         return shoppingCart;
     }
+
     public void addShoppingCart(Product product) {
         //CODE TO ADD ITEM TO SHOPPING CART
         shoppingCart.add(product);
@@ -68,6 +69,16 @@ public class User implements Serializable {
         this.setId(id);
         this.setUserType(userType);
         this.setPhone(phone);
+    }
+
+    public Momento saveCartToMomento() {
+        ArrayList<Product> newCart = new ArrayList<>(shoppingCart);
+        Momento m = new Momento(newCart);
+        return m;
+    }
+
+    public void getSavedCartFromMomento(Momento momento) {
+        this.shoppingCart = momento.getSavedCart();
     }
 
 

@@ -29,6 +29,13 @@ public class Main extends Application {
         Products.initializeProducts();
 //        Products.createDefaultProducts();
 //        System.out.println(Products.products);
+
+        // VERY BADLY MADE BY
+        // NEIL NGUYEN
+
+        // THANKS FOR WATCHING
+
+
 //        END TEST REGION
 
 

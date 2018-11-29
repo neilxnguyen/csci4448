@@ -38,6 +38,7 @@ public class RegisterHandler {
             User newUser = new User(usersSize, 0, number.getText());
             Users.users.add(newUser);
             System.out.println(Users.users);
+            System.out.println("New User has ID " + usersSize);
             window.close();
         });
 

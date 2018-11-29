@@ -30,6 +30,7 @@ public class EditProductDetails {
                 productIdField.setText("Invalid ID");
             }
         });
+        okButton.setDefaultButton(true);
 
         VBox vLayout = new VBox(10);
         vLayout.getChildren().addAll(label1, productIdField,okButton);
